@@ -20,12 +20,12 @@ public class Queue_Film {
                     System.out.println("Input the customer's name");
                     input.nextLine();
                     customerName = input.nextLine();
-                    queue.offer(customerName);
+                    queue.add(customerName);
                     break;
                 case 2:
                     if(queue.size()>1) {
-                        queue.poll();
                         System.out.println("The next customer: " + queue.peek());
+                        queue.poll();
                     } else {
                         System.err.println("There only one customer in the queue");
                     }
